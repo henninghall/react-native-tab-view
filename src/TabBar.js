@@ -348,7 +348,7 @@ export default class TabBar<T: *> extends React.Component<Props<T>, State> {
             scrollEnabled
               ? { width: tabBarWidth, transform: [{ translateX }] }
               : null,
-          ]}
+            ]}
         >
           {this._renderIndicator({
             ...this.props,
@@ -537,6 +537,7 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
+    zIndex: 1,
   },
   indicator: {
     backgroundColor: '#ffeb3b',
